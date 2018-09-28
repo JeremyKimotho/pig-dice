@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope" rel="stylesheet">
+  <link rel="shortcut icon" href="images/icon.png" />
+  <link href='css/bootstrap.css' rel='stylesheet' type='text/css'>
+  <link href='css/styles.css' rel='stylesheet' type='text/css'>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+  <title>Pig Dice Game</title>
+</head>
+<body>
+  <h1>PIG DICE GAME</h1>
+  <div class='game-hidden'>
+    <h2 id='how-to-play'>
+      The game has 2 players, playing in rounds
+      In each turn, a player rolls a dice as many times as he wishes. Each result get added to his ROUND score
+      If the player rolls a 1, all his ROUND score gets lost. After that, it's the next player's turn
+      The player can choose 'Hold', which means that his ROUND score gets added to his GLOBAL score. It switches turns
+      The first player to reach 100 points on GLOBAL score wins the game.
+      <br><input type='submit' value='START GAME' id='start-game'>
+    </h2>
+  </div>
+  <div class="game-shows">
+    <div class="card">
+      <div class="container">
+        <div class="row">
+          <div id='player1' class="col-md-6">
+            <h3>Player One</h3>
+            <h4>Global Score:</h4>
+            <h4 id='total-p1'></h4>
+            <h5>Round Score:</h5>
+            <h5 id='round-p1'></h5>
+            <button type='submit' value='roll-p1' class='buttons-p1'>ROLL</button>
+            <button type='submit' value='hold-p1' class='buttons-p1'>HOLD</button>
+          </div>
+          <div id='player2' class="col-md-6">
+            <h3>Player Two</h3>
+            <h4>Global Score:</h4>
+            <h4 id='total-p2'></h4>
+            <h5>Round Score:</h5>
+            <h5 id='round-p2'></h5>
+            <button type='submit' value='roll-p1' class='buttons-p2'>ROLL</button>
+            <button type='submit' value='hold-p1' class='buttons-p2'>HOLD</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><input type='submit' value='NEW GAME' id='new-game' onclick='document.location.reload(true)'>
+  </div>
+</body>
+</html>

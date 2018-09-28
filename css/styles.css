@@ -1,0 +1,98 @@
+body{
+  background-color:#FFE4E1;
+  font-family: 'Annie Use Your Telescope', cursive;
+}
+
+h1{
+  text-align:center;
+  font-size:95px;
+}
+
+#how-to-play{
+  width: 65%;
+  border:black 3px dotted;
+  background-color:white;
+  margin-left:auto;
+  margin-right:auto;
+  font-size:31.5px;;
+  padding-bottom:30px;
+}
+
+#start-game{
+  background-color:#FFE4E1;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size:45px;
+  transition:transform .3s ease-in-out;
+}
+
+#start-game:hover{
+  background-color:#FFFFFF;
+  transform: rotate(360deg);
+  cursor:pointer;
+}
+
+.card{
+  width:65%;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+}
+
+.col-md-6 h3{
+  font-size:65px;
+  text-decoration:underline;
+}
+
+.col-md-6 h4{
+  font-size:35px;
+  font-style:italic; 
+}
+
+.col-md-6 h5{
+  font-size:40px;
+  font-weight:bold; 
+}
+
+#player1{
+  background-color:#EEE5DE;
+}
+
+#player2{
+  background-color:#FFF5EE;
+}
+
+#new-game{
+  font-size:25px;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  transition:transform .3s ease-in-out;
+  background-color:#F8F8FF;
+}
+
+#new-game:hover{
+  background-color:#FFE4E1;
+  transform: rotate(-360deg);
+  cursor:pointer;
+  color:red;
+}
+
+/* .game-shows{
+  display:none;
+} */
+
+.buttons-p1:hover{
+  color:red;
+  cursor:pointer;
+}
+
+.buttons-p2:hover{
+  color:red;
+  cursor:pointer;
+}
+
+.game-hidden{
+  display:none;
+}
