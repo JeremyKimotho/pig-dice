@@ -17,7 +17,7 @@
 ## Contact details
 {You may contact me at jeremykimotho@yahoo.com}
 ### Live Link
-jeremykimotho.github.io/pig-dice
+https://jeremykimotho.github.io/pig-dice/
 ### License
 MIT License
 
