@@ -14,14 +14,15 @@
   <title>Pig Dice Game</title>
 </head>
 <body>
+  <h6>Game Created by Jeremy Kimotho</h6>
   <h1>PIG DICE GAME</h1>
   <div class='game-hidden'>
     <h2 id='how-to-play'>
-      The game has 2 players, playing in rounds
-      In each turn, a player rolls a dice as many times as he wishes. Each result get added to his ROUND score
-      If the player rolls a 1, all his ROUND score gets lost. After that, it's the next player's turn
-      The player can choose 'Hold', which means that his ROUND score gets added to his GLOBAL score. It switches turns
-      The first player to reach 100 points on GLOBAL score wins the game.
+      The game has 2 players, playing in rounds.
+      In each turn, a player rolls a dice as many times as he wishes. If the player chooses to ‘Hold’, then his ‘Round Score’
+      is added to the ‘Global Score’. However if a player does not choose to ‘Hold’ and continues to ‘Roll’ and gets a roll
+      of 1, their ‘Round Score’ is lost and it’s the other players turn.
+      The first player to reach 100 points on ‘Global Score’ wins the game.
       <br><input type='submit' value='START GAME' id='start-game'>
     </h2>
   </div>
@@ -30,7 +31,7 @@
       <div class="container">
         <div class="row">
           <div id='player1' class="col-md-6">
-            <h3>Player One</h3>
+            <h3>Player One</h3 id='active1'>
             <h4>Global Score:</h4>
             <h4 id='total-p1'></h4>
             <h5>Round Score:</h5>
@@ -39,7 +40,7 @@
             <button type='submit' id='hold-p1' class='buttons-p1'>HOLD</button>
           </div>
           <div id='player2' class="col-md-6">
-            <h3>Player Two</h3>
+            <h3>Player Two</h3 id='active2'>
             <h4>Global Score:</h4>
             <h4 id='total-p2'></h4>
             <h5>Round Score:</h5>

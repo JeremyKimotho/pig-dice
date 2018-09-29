@@ -8,6 +8,12 @@ h1{
   font-size:95px;
 }
 
+h6{
+  font-size:10px;
+  float:right;
+  margin-bottom:25px;
+}
+
 #how-to-play{
   width: 65%;
   border:black 3px dotted;
@@ -55,10 +61,6 @@ h1{
   font-weight:bold; 
 }
 
-#player1{
-  background-color:#EEE5DE;
-}
-
 #player2{
   background-color:#FFF5EE;
 }
@@ -79,9 +81,9 @@ h1{
   color:red;
 }
 
-/* .game-shows{
-  display:none;
-} */
+.game-shows{
+  display:none;        
+}
 
 .buttons-p1:hover{
   color:red;
@@ -93,6 +95,3 @@ h1{
   cursor:pointer;
 }
 
-.game-hidden{
-  display:none;
-}
